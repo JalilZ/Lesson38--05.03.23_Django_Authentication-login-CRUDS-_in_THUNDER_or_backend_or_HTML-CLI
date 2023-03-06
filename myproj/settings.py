@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'base',
-    'rest_framework',
+    'base',                             # connecting application to project
+    'rest_framework',                   # Django Rest Framework
     'corsheaders',                      # CORS
     'rest_framework_simplejwt.token_blacklist',      # Authentication
 ]

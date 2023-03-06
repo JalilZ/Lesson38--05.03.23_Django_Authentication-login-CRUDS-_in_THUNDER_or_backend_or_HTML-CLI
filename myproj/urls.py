@@ -20,3 +20,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('base.urls'))
 ]
+
+from django.conf import settings                                                 # IMAGE upload - Django4Kids
+from django.conf.urls.static import static                                       # IMAGE upload - Django4Kids
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)     # IMAGE upload - Django4Kids
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)   # IMAGE upload - Django4Kids
