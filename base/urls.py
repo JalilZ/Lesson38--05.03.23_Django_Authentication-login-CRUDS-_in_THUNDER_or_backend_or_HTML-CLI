@@ -13,5 +13,5 @@ urlpatterns = [
     #path('students/<int:id>', views.students),             # using vicky CRUDS
     path('students/', views.StudentModelView.as_view()),     # django4kids: from rest_framework.views import APIView (views.py using class and CRUD methods in that class)
     path('students/<int:id>', views.StudentModelView.as_view()),
-    path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),          # Authentication
+    path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),          # Authentication (per eyal), in homework I did per django4kids a little bit different
 ]

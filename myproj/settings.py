@@ -81,7 +81,7 @@ SIMPLE_JWT = {                                              # Authentication
     'LEEWAY': 0,
 
 
-    'AUTH_HEADER_TYPES': ('Bearer',),                       # header tyoe (see in thunder also)
+    'AUTH_HEADER_TYPES': ('Bearer',),                       # header type (will be relevant for THUNDER & HTML)
     'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',

@@ -60,7 +60,7 @@
                     "username": uname.value,
                     "password": pwd.value,
                 })
-                .then((res) => (myToken = res.data.access));
+                .then((res) => (myToken = res.data.access)); // we ask here for access (in data we have access & refresh)
                 console.log(myToken)
         };
 
